@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Banjar Shine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-page">
+    <div class="admin-container">
+        <h2>Admin <span>Control Panel</span></h2>
+        <div class="search-box">
+            <input type="tel" id="searchPhone" placeholder="Cari No. WA Pelanggan">
+            <button onclick="searchCustomer()" class="btn-gold">Cari</button>
+        </div>
+
+        <div id="customerResult" class="result-card" style="display:none;">
+            <h3 id="resName">Nama</h3>
+            <p>Total Stamp: <span id="resCount">0</span></p>
+            <button onclick="updateStamp(1)" class="btn-add">+ Tambah 1 Stamp</button>
+            <button onclick="updateStamp(-10)" class="btn-reset">Gunakan Bonus (Reset 10)</button>
+        </div>
+    </div>
+    <script type="module" src="auth.js"></script>
+</body>
+</html>

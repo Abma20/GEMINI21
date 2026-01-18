@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Area - Banjar Auto Shine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="auth-page">
+
+    <div id="authContainer" class="auth-container">
+        <div id="loginBox">
+            <h2>Masuk <span>Member</span></h2>
+            <input type="tel" id="loginPhone" placeholder="Nomor WhatsApp">
+            <input type="password" id="loginPass" placeholder="Password">
+            <button id="btnLogin" class="btn-gold">Masuk</button>
+            <p>Belum punya akun? <a href="javascript:void(0)" id="btnShowReg">Daftar Disini</a></p>
+        </div>
+
+        <div id="registerBox" style="display:none;">
+            <h2>Daftar <span>Member</span></h2>
+            <input type="text" id="regName" placeholder="Nama Lengkap">
+            <input type="tel" id="regPhone" placeholder="Nomor WhatsApp">
+            <input type="password" id="regPass" placeholder="Buat Password">
+            <button id="btnReg" class="btn-gold">Buat Akun Sekarang</button>
+            <p>Sudah punya akun? <a href="javascript:void(0)" id="btnShowLogin">Login Disini</a></p>
+        </div>
+    </div>
+
+    <div id="userDashboard" class="dashboard-container" style="display: none;">
+        <div class="user-info">
+            <h2 id="userName">Memuat...</h2>
+            <p id="displayPhone"></p>
+        </div>
+        <div class="loyalty-card">
+            <h3>Kartu Cuci Digital</h3>
+            <div class="stamp-grid" id="stampGrid"></div>
+            <p id="rewardMsg">Kumpulkan 10 stamp untuk 1x cuci gratis!</p>
+        </div>
+        <button id="btnLogoutUser" class="btn-outline">Keluar</button>
+    </div>
+
+    <div id="adminPanel" class="admin-container" style="display: none;">
+        <h2>Admin <span>Control</span></h2>
+        <div class="search-box">
+            <input type="tel" id="searchPhone" placeholder="Cari No. WA Pelanggan">
+            <button id="btnSearch" class="btn-gold">Cari</button>
+        </div>
+        <div id="customerResult" class="result-card" style="display:none; margin-top:20px;">
+            <h3 id="resName">Nama</h3>
+            <p>Total Stamp saat ini: <span id="resCount" style="color: #ffcc00; font-weight: bold;">0</span></p>
+            <div style="display: flex; gap: 10px; margin-top: 15px;">
+                <button id="btnAddStamp" class="btn-gold" style="flex: 2;">+ Tambah 1 Stamp</button>
+                <button id="btnResetStamp" class="btn-outline" style="flex: 1; color: red;">Reset</button>
+            </div>
+        </div>
+        <button id="btnLogoutAdmin" class="btn-outline" style="margin-top: 30px;">Keluar Admin</button>
+    </div>
+
+    <script type="module" src="auth.js"></script>
+</body>
+</html>

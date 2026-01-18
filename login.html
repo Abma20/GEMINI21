@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Member - Banjar Shine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+    <div class="auth-container">
+        <div id="loginBox">
+            <h2>Masuk <span>Member</span></h2>
+            <input type="tel" id="loginPhone" placeholder="Nomor WhatsApp">
+            <input type="password" id="loginPass" placeholder="Password">
+            <button onclick="authLogin()" class="btn-gold">Masuk</button>
+            <p>Belum punya akun? <a href="javascript:void(0)" onclick="toggleAuth()">Daftar Disini</a></p>
+        </div>
+
+        <div id="registerBox" style="display:none;">
+            <h2>Daftar <span>Member</span></h2>
+            <input type="text" id="regName" placeholder="Nama Lengkap">
+            <input type="tel" id="regPhone" placeholder="Nomor WhatsApp">
+            <input type="password" id="regPass" placeholder="Buat Password">
+            <button onclick="authRegister()" class="btn-gold">Buat Akun</button>
+            <p>Sudah punya akun? <a href="javascript:void(0)" onclick="toggleAuth()">Login Disini</a></p>
+        </div>
+    </div>
+    <script type="module" src="auth.js"></script>
+</body>
+</html>

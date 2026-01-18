@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Member</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="user-info">
+            <h2 id="userName">Memuat...</h2>
+            <p id="userPhone"></p>
+        </div>
+        
+        <div class="loyalty-card">
+            <h3>Voucher Cuci Gratis</h3>
+            <div class="stamp-grid" id="stampGrid"></div>
+            <p id="rewardMsg">Kumpulkan 10 stamp!</p>
+        </div>
+        <button onclick="logout()" class="btn-outline">Keluar</button>
+    </div>
+    <script type="module" src="auth.js"></script>
+</body>
+</html>
