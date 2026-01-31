@@ -1,16 +1,16 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getFirestore, doc, setDoc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
-KONFIGURASI FIREBASE ANDA
+//KONFIGURASI FIREBASE ANDA
 const firebaseConfig = {
-apiKey: "AIzaSyBhraloQrZI7kGAN-t0cvhI_pVQPPjgV34",
-uthDomain: "banjarshine.firebaseapp.com",
-projectId: "banjarshine",
-storageBucket: "banjarshine.firebasestorage.app",
- messagingSenderId: "802908274864",
-appId: "1:802908274864:web:04cbbe901004400e063b75",
- measurementId: "G-G2C6X4CHPL"
-};
+  apiKey: "AIzaSyBhraloQrZI7kGAN-t0cvhI_pVQPPjgV34",
+  uthDomain: "banjarshine.firebaseapp.com",
+  projectId: "banjarshine",
+  storageBucket: "banjarshine.firebasestorage.app",
+  messagingSenderId: "802908274864",
+  appId: "1:802908274864:web:04cbbe901004400e063b75",
+  measurementId: "G-G2C6X4CHPL"
+  };
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
@@ -132,5 +132,6 @@ function logout() {
     location.reload();
 
 }
+
 
 
